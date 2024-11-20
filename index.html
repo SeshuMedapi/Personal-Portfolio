@@ -1,0 +1,271 @@
+<!-- basic index.html code -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://kit.fontawesome.com/01c0271e38.js" crossorigin="anonymous"></script>
+<body>
+<div id="header">
+    <div class="container">
+        <nav >
+            <img src="images/logo3.png" alt="logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Junior Software Engineer</p>
+            <h1>Hi i'm <span>Seshu Medapi</span><br>from India.</h1>
+        </div>
+    </div>
+</div>
+
+<!-- --------------about---------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user3.png" alt="user">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I'm [Your Name], a recent graduate in [Your Field] 
+                   from [Your University/College], passionate about [specific
+                   interest in your field, e.g., web development, graphic design, data analysis]. 
+                   I have hands-on experience with [list key skills or technologies, 
+                   e.g., Python, JavaScript, data visualization], gained through academic projects like 
+                   [mention standout project, e.g., "developing a user-friendly web app" or "analyzing real-world datasets"]. 
+                   I thrive on tackling challenges, collaborating in teams, and creating impactful solutions. 
+                   Outside of work, I enjoy [personal touch, e.g., "exploring new tech trends" or "learning innovative design techniques"]. 
+                   Let’s connect to create something amazing together!
+                </p>
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li>
+                                <span>HTML, CSS, JavaScript, ReactJs</span><br>Frontend Developer
+                            </li>
+                            <li>
+                                <span>Python</span><br>Python Developer
+                            </li>
+                            <!-- <li>
+                                <span>MERN (MongoDB, ExpressJS, ReactJS, NodeJS)</span><br>MERN Stack Developer
+                            </li> -->
+                            <li>
+                                <span>Git</span><br>Git Manager
+                            </li>
+                        </ul>
+                   </div>
+
+               <div class="tab-contents" id="Experience">
+                <ul>
+                    <li>
+                        <span>2024 - Current</span><br>Junior Software Engineer at Jivass Technologies.
+                    </li>
+                    <li>
+                        <span>July 2024 - Agust 2024</span><br>Intern as Webdeveloper at CodSoft.
+                    </li>
+                    <li>
+                        <span>October 2024</span><br>Python Course Competion Cerficate from SkillUP!
+                    </li>
+                </ul>
+           </div>
+           <div class="tab-contents" id="Education">
+            <ul>
+                <li>
+                    <span>Under Graduation (2020 - 2024)</span><br>Computer Science and Engineering (CSE) at IIIT) Sri-City, Chittoor.
+                </li>
+                <li>
+                    <span>11th & 12th (2018 - 2020)</span><br>Narayana) Junior College, vijayawada.
+                </li>
+                <li>
+                    <span>Secondary School</span><br>A.P Residential School, Ganapavaram.
+                </li>
+            </ul>
+       </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-react"></i>
+                <h2>FrontEnd Development</h2>
+                <p>I specialize in crafting responsive and user-friendly 
+                    websites using technologies like 
+                    HTML, CSS, JavaScript, and ReactJS. 
+                    My focus is on creating intuitive interfaces 
+                    that enhance user experience while maintaining 
+                    clean and efficient code.</p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Python Development</h2>
+                <p>As a Python developer, 
+                    I build robust scripts and applications, 
+                    leveraging Python's versatility for data 
+                    analysis, automation, and backend development. 
+                    I enjoy solving complex problems and delivering 
+                    scalable solutions tailored to specific needs.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div> <i class="fa-brands fa-git-alt"></i>
+                <h2>Git Management</h2>
+                <p>I ensure smooth version control and collaboration using Git. 
+                    From managing repositories to resolving merge conflicts, 
+                    I facilitate seamless teamwork and maintain a structured 
+                    development workflow to keep projects organized and efficient.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+                
+                
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- ----------------portfolio--------------- -->
+ <div id = "portfolio">
+    <div class="container">    
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.1.jpg" alt="">
+                    <div class="layer">
+                        <h3>To Do List</h3>
+                        <p>This React-based task management component leverages modern React Hooks 
+                            like useState to efficiently handle state for features such as adding, 
+                            deleting, and toggling tasks. It includes interactive functionalities 
+                            like clearing all tasks or marking all as done, enhancing usability with 
+                            intuitive event handlers (e.g., onClickAdd, onClickDelete) and visually 
+                            appealing icons from libraries like react-icons. This approach ensures 
+                            a dynamic, user-friendly experience while maintaining clean and readable code.
+                        </p>
+                        <a href="https://github.com/SeshuMedapi/To-Do-List" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Contact Management</h3>
+                        <p>This contact management app, built with ReactJS, TypeScript, and TailwindCSS, 
+                            integrates charts and maps to deliver a versatile user experience. It features 
+                            functionalities to add, edit, view, and delete contacts, alongside a line graph 
+                            depicting COVID-19 case trends and an interactive world map with country-specific 
+                            markers for COVID-19 data. Powered by React Router v6 and React Query, the app 
+                            ensures seamless navigation and efficient data handling.
+                        </p>
+                        <a href="https://github.com/SeshuMedapi/Contact-Manager" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Lung Cancer Prediction</h3>
+                        <p>Our B.Tech project, a collaborative effort among three team members, 
+                            merges bioinformatics and machine learning to predict an individual’s 
+                            likelihood of developing lung cancer using gene expression data. 
+                            Achieving an impressive accuracy of 99.06%, this interdisciplinary 
+                            project combines expertise in biology, data analysis, and AI. With 
+                            its potential for early diagnosis and personalized interventions, 
+                            it holds significant promise for impactful healthcare advancements.
+                        </p>
+                        <a href="https://github.com/SeshuMedapi/Lung-Cancer-Prediction" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div>
+        <a href="https://github.com/SeshuMedapi?tab=repositories" target="_blank" class="btn">See More</a>
+    </div>
+
+ </div>
+ <!-- ---------------Contact------------------- -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>seshu.m20@iiits.in</p>
+                <p><i class="fa-solid fa-phone"></i>7780376922</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/seshu-medapi-64560a288/" class="fa-brands fa-linkedin">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/SeshuMedapi" class="fa-brands fa-github">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://x.com/seshu_m27" class="fa-brands fa-x-twitter">
+                        <span>Twitter</span>
+                    </a>
+                    <a href="https://www.instagram.com/https.seshu.m/" class="fa-brands fa-instagram">
+                        <span>Instagram</span>
+                    </a>
+                </div>
+                <a href="images/SESHU_RESUME.pdf" download target="_blank" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required> 
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>   
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyrights © Seshu. Made with <i class="fa-solid fa-heart"></i> by Seshu Medapi</p>
+    </div>
+  </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+}
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
