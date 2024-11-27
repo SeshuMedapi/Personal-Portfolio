@@ -18,6 +18,7 @@ body{
     background-image: url(images/background4.png);
     background-size: cover;
     background-position: center;
+    
 }
 .container{
     padding: 30px 70px;
@@ -27,9 +28,20 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
+}
+#navbar{
+    
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* background: rgba(0, 0, 0, 0.7); */
+    background:rgba(0, 0, 0, 0.7);
+
 }
 .logo{
     width: 140px;
+    
 }
 nav ul li{
     display: inline-block;
@@ -54,10 +66,6 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width:100%;
     transition: 0.5s ease;
-    -webkit-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    -ms-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
 
 }
 .header-text{
